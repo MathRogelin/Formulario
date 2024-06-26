@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Professor | IA &#129302</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div id="title_ini">
+            <h3>Formulário Professores | Turma 303</h3>
+        </div>
+        <div id="descricao">
+            <p>
+                Este formulário tem como objetivo coletar informações sobre o perfil dos professores 
+                e suas percepções sobre o uso de Inteligência Artificial (IA) na educação. 
+                Sua participação é fundamental para o sucesso deste projeto da nossa Feira de Ciências. 
+                Todas as respostas serão tratadas com confidencialidade.
+            </p>
+        </div>
+        <div class="form">
+            <div class="container_form">
+                <form action="https://formspree.io/f/movaawlz" method="POST">
+                    <h2>Informações de Perfil:</h2>
+                    <label for="inNome">
+                        Nome:
+                    </label>
+                    <input type="text" name="Nome" id="inNome" required>
+                    <br>
+                    <label for="inIdade">   
+                        Idade:
+                    </label>
+                    <input type="number" name="Idade" id="inIdade" required>
+                    <br>
+                    <label for="inSexo">
+                        Sexo:
+                    </label>
+                    <select name="Sexo" id="inSexo" required>
+                        <option selected></option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Feminino">Feminino</option>
+                    </select>
+                    <br>
+                    <label for="inEnsino">
+                        Área de Ensino:
+                        <select name="Área de Ensino" id="inEnsino" placeholder="Ex: Geografia">
+                            <option value="" selected></option>
+                            <option value="História">História</option>
+                            <option value="Geografia">Geografia</option>
+                            <option value="Filosofia">Filosofia</option>
+                            <option value="Artes">Artes</option>
+                            <option value="Português">Português</option>
+                            <option value="Inglês">Inglês</option>
+                            <option value="Matemática">Matemática</option>
+                            <option value="Sociologia">Sociologia</option>
+                            <option value="Espanhol">Espanhol</option>
+                            <option value="Física">Física</option>
+                            <option value="Química">Química</option>
+                            <option value="Biologia">Biologia</option>
+                            <option value="Educação Física">Educação Física</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label for="inAnos">
+                        Experiência:
+                        <input type="number" name="Anos de Experiência" id="inAnos" placeholder="Anos">
+                    </label>
+                    <br>
+                    <h2>Sobre a Inteligência Artificial:</h2>
+                    <label for="">
+                       1. Como você avalia seu nível de conhecimento sobre Inteligência Artificial?
+                    </label>
+                    <br>
+                    <br>
+                    <input type="radio" id="nenhum" name="conhecimento_ia" value="nenhum">
+                    <label for="nenhum">Nenhum</label><br>
+                    <input type="radio" id="basico" name="conhecimento_ia" value="basico">
+                    <label for="basico">Básico</label><br>
+                    <input type="radio" id="intermediario" name="conhecimento_ia" value="intermediario">
+                    <label for="intermediario">Intermediário</label><br>
+                    <input type="radio" id="avancado" name="conhecimento_ia" value="avancado">
+                    <label for="avancado">Avançado</label>
+                    <br>
+                    <br>
+                    <label for="">
+                       2. Você já utilizou ferramentas de IA em suas aulas? Se sim, quais?
+                    </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="chatbots" name="ferramentas_ia" value="chatbots">
+                    <label for="chatbots">Chatbots</label><br>
+                    <input type="checkbox" id="plataformas_aprendizado" name="ferramentas_ia" value="plataformas_aprendizado">
+                    <label for="plataformas_aprendizado">Plataformas de aprendizado adaptativo</label><br>
+                    <input type="checkbox" id="ferramentas_analise" name="ferramentas_ia" value="ferramentas_analise">
+                    <label for="ferramentas_analise">Ferramentas de análise de dados</label><br>
+                    <input type="checkbox" id="outros_ferramentas" name="ferramentas_ia" value="outros_ferramentas">
+                    <label for="outros_ferramentas">Outros</label>
+                    <br>
+                    <br>
+                    <label for="">
+                       3. Qual é a sua opinião sobre o uso de IA no processo educacional?
+                    </label>
+                    <br>
+                    <br>
+                    <textarea id="opiniao" name="opiniao" cols="50"></textarea>
+                    <br>
+                    <br>
+                    <label>
+                        4. Quais benefícios você vê no uso de IA na educação?
+                    </label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="personalizacao" name="beneficios_ia" value="personalizacao">
+                    <label for="personalizacao">Personalização do ensino</label><br>
+                    <input type="checkbox" id="feedback" name="beneficios_ia" value="feedback">
+                    <label for="feedback">Feedback em tempo real</label><br>
+                    <input type="checkbox" id="suporte" name="beneficios_ia" value="suporte">
+                    <label for="suporte">Suporte administrativo</label><br>
+                    <input type="checkbox" id="analise" name="beneficios_ia" value="analise">
+                    <label for="analise">Análise de desempenho</label><br>
+                    <input type="checkbox" id="outros_beneficios" name="beneficios_ia" value="outros_beneficios">
+                    <label for="outros_beneficios">Outros</label>
+                    <br>
+                    <br>
+                    <label>5. Quais preocupações você tem em relação ao uso de IA na educação?</label><br><br>
+                    <input type="checkbox" id="privacidade" name="preocupacoes_ia" value="privacidade">
+                    <label for="privacidade">Privacidade de dados</label><br>
+                    <input type="checkbox" id="desumanizacao" name="preocupacoes_ia" value="desumanizacao">
+                    <label for="desumanizacao">Desumanização do ensino</label><br>
+                    <input type="checkbox" id="dependencia" name="preocupacoes_ia" value="dependencia">
+                    <label for="dependencia">Dependência tecnológica</label><br>
+                    <input type="checkbox" id="outros_preocupacoes" name="preocupacoes_ia" value="outros_preocupacoes">
+                    <label for="outros_preocupacoes">Outros</label>
+                    <br>
+                    <br>
+                    <label for="impacto">6. Como você acha que a IA pode impactar o papel do professor?</label><br><br>
+                    <textarea id="impacto" name="impacto" cols="50"></textarea>
+                    <br>
+                    <br>
+                    <label>7. Você acredita que precisa de capacitação para integrar IA em suas aulas?</label><br><br>
+                    <input type="radio" id="sim_capacitacao" name="capacitacao" value="sim">
+                    <label for="sim_capacitacao">Sim</label><br>
+                    <input type="radio" id="nao_capacitacao" name="capacitacao" value="nao">
+                    <label for="nao_capacitacao">Não</label>
+                    <br>
+                    <br>
+                    <label for="recursos">8. Que tipo de recursos ou treinamentos sobre IA você gostaria de ter acesso?</label><br><br>
+                    <textarea id="recursos" name="recursos" cols="50"></textarea>
+                    <br>
+                    <br>
+                    <label>9. Você já participou de algum projeto que envolvesse IA na escola?</label><br>
+                    <input type="radio" id="sim_projeto" name="projeto" value="sim">
+                    <label for="sim_projeto">Sim</label><br>
+                    <input type="radio" id="nao_projeto" name="projeto" value="nao">
+                    <label for="nao_projeto">Não</label>
+                    <br>
+                    <br>
+                    <label for="experiencia">10. Se sim, qual foi a sua experiência?</label><br><br>
+                    <textarea id="experiencia" name="experiencia" cols="50"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" value="Enviar">
+            </div>
+            </form>
+        </div>
+    </main>
+    <script src="formulario.js"></script>
+</body>
+</html>
